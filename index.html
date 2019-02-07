@@ -17,7 +17,7 @@
       h2 {
         text-align: left;
         font-family: "Verdana";
-        color: #336655;
+        color: #0a5c49/*14bf96*/;
         font-size: 30px;
       }
       p {
@@ -45,6 +45,14 @@
         border: none;
         cursor: pointer;
       }
+      a:link, a:visited {
+        color: #0a5c49;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      a:link:active, a:visited:active {
+        color: #14bf96;
+      }
       #main-body {
         margin: 10px;
         padding: 10px;
@@ -59,6 +67,15 @@
         min-height: 50px;
         margin-left: 10px;
       }
+      #img-debug {
+        width: 32px;
+        height: 32px;
+        float: left;
+      }
+      #debug-description {
+        margin-left: 40px;
+        margin-top: 30px;
+      }
 
     </style>
   </head>
@@ -66,7 +83,9 @@
     <h1>Khan Academy Community Center</h1>
     <div id="main-body">
       <div id="right-panel">
+        <!--
         <iframe src="https://discordapp.com/widget?id=372895163279998976&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+-->
       </div>
       <div id="left-panel">
         <h2>About</h2>
@@ -80,12 +99,13 @@
         <p><i>Please provide a link to your Khan Academy profile once you have joined</i></p>
         <hr />
         <h2>Server Staff</h2>
-        <p>... ... ... ... </p>
+        <p>Staff play an important role in maintaining our discord server and interacting with the community. </p>
         <p>We are always looking for more server staff to contribute to our server. To apply for admin, moderator, daily dose poster, and other roles, click <a href="#">here</a>. To learn more, click <a href="#">here</a> </p>
         <hr />
         <h2>Partners</h2>
-        <p>... ... ... ... </p>
-        <p>Want to become a partner with KACC? ...</p>
+        <img id="img-debug" src="images/debugLogo.png" alt="Debug Center Logo">
+        <p id="debug-description"><a href="https://discord.gg/TGZC7rQ" target="_blank">Program Debug Center</a></p>
+        <p>Want to become a partner with KACC? Let us know by [somehow idk]</p>
         <hr />
         <p><b>Khan Academy Community Center is not affiliated with Khan Academy.</b></p>
       </div>
