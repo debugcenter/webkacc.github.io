@@ -6,46 +6,37 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <style>
-#left-panel {
-  min-height: 50px;
-  overflow: hidden;
-}
-#right-panel {/* dimentions of the discord widget are 350 x 500 */
-  float: right;
-  width: 350;
-  min-height: 50px;
-  margin-left: 10px;
-}
-#img-debug {
-  width: 32px;
-  height: 32px;
-  float: left;
-}
-#debug-description {
-  margin-left: 40px;
-  margin-top: 25px;
-}
-h2 > a {
-  text-decoration: none !important;
-}
+
     </style>
   </head>
   <body>
     <div class="topnav">
-      <span id="kaccHeader"><a href="index.html">Khan Academy Community Center</a></span>
-      <a href="partners.html">Partners</a>
-      <a href="serverstaff.html">Server Staff</a>
-      <a href="join.html">Join</a>
-      <a href="about.html">About</a>
-      <a class="active">Home</a>
+      <div id="header">
+        <div id="logo-container">
+          <img id="logo" src="images/kaccLogo.png">
+          <span id="title"><b>Khan Academy Community Center</b></span>
+        </div>
+      </div>
+      <div id="myLinks">
+        <a href="#" onclick="alert('Not yet implemented')">News</a>
+        <a href="https://goo.gl/forms/coLm1J0uLzRSlny83" target="_blank">Submit Feedback</a>
+        <a href="#" onclick="alert('Not yet implemented')">Apply for Staff</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+        <div></div><div></div><div></div>
+      </a>
     </div>
-    <h1>Home</h1>
     <div id="main-body">
       <div id="right-panel">
         <iframe src="https://discordapp.com/widget?id=372895163279998976&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+        <hr />
+        <h2>Partners</h2>
+        <img id="img-debug" src="images/debugLogo.png" alt="Debug Center Logo">
+        <p id="debug-description"><a href="https://discord.gg/TGZC7rQ" target="_blank">Program Debug Center</a></p>
+        <p>Does your discord server want to partner with us? Let us know by filling out this <a href="#" onclick="alert('Not yet implemented')">Google form</a>.</p>
       </div>
       <div id="left-panel">
-        <h2><a href="about.html">About</a></h2>
+        <h2>About</h2>
         <p>Khan Academy Community Center (KACC) is a welcoming discord community with over 200 members and active staff. This is the place where Khan Academy users can come to chat, get to know other users, talk about programming, and have fun!</p>
         <hr />
         <h2>Join</h2>
@@ -57,17 +48,39 @@ h2 > a {
         <hr />
         <h2>Server Staff</h2>
         <p>Staff play an important role in maintaining our discord server and interacting with the community. </p>
-        <p>We are always looking for more server staff to contribute to our server. To apply for admin, moderator, daily dose poster, and other roles, click <a href="#">here</a>. To learn more, click <a href="#">here</a>.</p>
+        <div id="lists">
+          <div id="list-admins">
+            <h3>Admins</h3>
+            <ul>
+              <li>Legolas Greenleaf#2906</li>
+              <li>Abigail#1234</li>
+              <li>Squishy Caterpillar#0105</li>
+            </ul>
+          </div>
+          <div id="list-mods">
+            <h3>Mods</h3>
+            <ul>
+              <li>Ace Flame#3570</li>
+              <li>Anakin#2491</li>
+              <li>Sunshine#8899</li>
+            </ul>
+          </div>
+        </div>
+        <p>We are always looking for more server staff to contribute to our server. To apply for admin, moderator or another role, click <a href="#">here</a>.</p>
         <p>You can also give us direct feedback by clicking <a href="https://goo.gl/forms/coLm1J0uLzRSlny83" target="_blank">this link</a>.</p>
         <hr />
-        <h2>Partners</h2>
-        <img id="img-debug" src="images/debugLogo.png" alt="Debug Center Logo">
-        <p id="debug-description"><a href="https://discord.gg/TGZC7rQ" target="_blank">Program Debug Center</a></p>
-        <p>Want to become a partner with KACC? Let us know by [somehow idk]</p>
-        <hr />
-        <p><b>Khan Academy Community Center is not affiliated with Khan Academy.</b></p>
       </div>
-
+      <p id="footer-text"><b>Khan Academy Community Center is not affiliated with Khan Academy.</b></p>
     </div>
   </body>
+  <script>
+    function expandMenu() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
 </html>
