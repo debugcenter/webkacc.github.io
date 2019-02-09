@@ -1,10 +1,10 @@
 html, body {
   margin:0;
   padding:0;
+  font-family: Verdana, Helvetica;
 }
 h1 {
   text-align: center;
-  font-family: "Verdana";
   color: #666666;
   font-size: 30px;
   margin-bottom: 0;
@@ -12,13 +12,21 @@ h1 {
 }
 h2 {
   text-align: left;
-  font-family: "Verdana";
   color: #0a5c49/*14bf96*/;
   font-size: 25px;
 }
+h3 {
+  color: #444444;
+  font-size: 20px;
+}
+#list-admins, #list-mods {
+  float: left;
+}
+#lists {
+  display: inline-block;
+}
 p {
   text-align: left;
-  font-family: "Verdana";
   color: #666666;
   font-size: 17px;
 }
@@ -27,11 +35,6 @@ pre {
 }
 i {
   font-size: 13px;
-}
-b {
-  font-family: monospace;
-  color: #777777;
-  font-size: 11px;
 }
 button {
   background-color: #6c9ae2;
@@ -51,49 +54,94 @@ a:link:active, a:visited:active {
 }
 .topnav {
   overflow: hidden;
-  background-color: #0a5c49;
-  font-family: Verdana;
-  font-size: 15px;
+  background-color: #dddddd;
+  position: relative;
 }
-.topnav a:not(:first-child) {/* Select nav items */
-  float: right;
-  color: #ddd;
-  text-align: center;
-  padding: 11px 13px;
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: black;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
-.topnav a:not(:first-child):hover {/* Select nav items */
-  background-color: #6c9ae2;
-  color: white;
+.topnav #header {
+  color: black;
+  font-size: 17px;
+  height: 100px;
 }
-.topnav a.active {
-  background-color: #6c9ae2;
-  color: white;
+.topnav #logo-container {
+  display:table;
+  margin: 0 auto;
 }
-.topnav #kaccHeader {
-  background: url( "images/kaccLogo.png" ) no-repeat;
-  display: inline-block;
-  background-size: 37px 37px; /* image's size */
-  height: 37px; /* image's height */
-  padding-left: 40px; /* image's width plus 5 px (margin between text and image) */
+.topnav #logo {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-top: 19px;
+}
+.topnav #title {
+  margin-top: 37px;
+  margin-left: 5px;
+  font-size: 20px;
+  float: left;
+}
+.topnav a.icon {
+  display: block;
   position: absolute;
-  margin-top: 2px;
-  margin-left: 2px;
+  right: 0;
+  top: 0;
 }
-.topnav #kaccHeader:hover {
-  cursor: pointer;
+.topnav a.icon div {
+  width: 30px;
+  height: 4px;
+  background-color: #888888;
+  margin: 3px 0;
 }
-.topnav #kaccHeader > a {
-  height: 38px; /* image's height */
-  display: table-cell;
-  vertical-align: middle;
-  color: #ddd;
-  text-decoration: none;
+.topnav > div > a {
+  text-align: center;
+  background-color: #cccccc;
 }
-.topnav #kaccHeader > a:hover {
-  color: white;
+.topnav > div > a:hover {
+  background-color: #6c9ae2;
+}
+.topnav > div > a:active {
+  color: black;
 }
 #main-body {
   margin: 10px;
   padding: 10px;
+}
+#left-panel {
+  min-height: 50px;
+  overflow: hidden;
+}
+#right-panel {/* dimentions of the discord widget are 350 x 500 */
+  float: right;
+  width: 350px;
+  min-height: 50px;
+  margin-left: 10px;
+}
+#img-debug {
+  width: 32px;
+  height: 32px;
+  float: left;
+}
+#debug-description {
+  margin-left: 40px;
+  margin-top: 25px;
+}
+#footer-text {
+  font-family: monospace;
+  color: #777777;
+  font-size: 11px;
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  #right-panel {
+    float: none;
+    background-color: #eeeeee;
+  }
 }
