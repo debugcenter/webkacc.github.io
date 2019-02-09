@@ -1,0 +1,99 @@
+html, body {
+  margin:0;
+  padding:0;
+}
+h1 {
+  text-align: center;
+  font-family: "Verdana";
+  color: #666666;
+  font-size: 30px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+h2 {
+  text-align: left;
+  font-family: "Verdana";
+  color: #0a5c49/*14bf96*/;
+  font-size: 25px;
+}
+p {
+  text-align: left;
+  font-family: "Verdana";
+  color: #666666;
+  font-size: 17px;
+}
+pre {
+  font-size: 18px;
+}
+i {
+  font-size: 13px;
+}
+b {
+  font-family: monospace;
+  color: #777777;
+  font-size: 11px;
+}
+button {
+  background-color: #6c9ae2;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+a:link, a:visited {
+  color: #0a5c49;
+  text-decoration: underline;
+  cursor: pointer;
+}
+a:link:active, a:visited:active {
+  color: #14bf96;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #0a5c49;
+  font-family: Verdana;
+  font-size: 15px;
+}
+.topnav a:not(:first-child) {/* Select nav items */
+  float: right;
+  color: #ddd;
+  text-align: center;
+  padding: 11px 13px;
+  text-decoration: none;
+}
+.topnav a:not(:first-child):hover {/* Select nav items */
+  background-color: #6c9ae2;
+  color: white;
+}
+.topnav a.active {
+  background-color: #6c9ae2;
+  color: white;
+}
+.topnav #kaccHeader {
+  background: url( "images/kaccLogo.png" ) no-repeat;
+  display: inline-block;
+  background-size: 37px 37px; /* image's size */
+  height: 37px; /* image's height */
+  padding-left: 40px; /* image's width plus 5 px (margin between text and image) */
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+.topnav #kaccHeader:hover {
+  cursor: pointer;
+}
+.topnav #kaccHeader > a {
+  height: 38px; /* image's height */
+  display: table-cell;
+  vertical-align: middle;
+  color: #ddd;
+  text-decoration: none;
+}
+.topnav #kaccHeader > a:hover {
+  color: white;
+}
+#main-body {
+  margin: 10px;
+  padding: 10px;
+}
