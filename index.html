@@ -3,90 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>Khan Academy Community Center</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <style>
-      html, body {
-        margin:0;
-        padding:0;
-      }
-      h1 {
-        text-align: center;
-        font-family: "Verdana";
-        color: #666666;
-        font-size: 30px;
-      }
-      h2 {
-        text-align: left;
-        font-family: "Verdana";
-        color: #0a5c49/*14bf96*/;
-        font-size: 30px;
-      }
-      p {
-        text-align: left;
-        font-family: "Verdana";
-        color: #666666;
-        font-size: 17px;
-      }
-      pre {
-        font-size: 18px;
-      }
-      i {
-        font-size: 13px;
-      }
-      b {
-        font-family: monospace;
-        color: #777777;
-        font-size: 11px;
-      }
-      button {
-        background-color: #6c9ae2;
-        color: white;
-        padding: 12px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-      }
-      a:link, a:visited {
-        color: #0a5c49;
-        text-decoration: underline;
-        cursor: pointer;
-      }
-      a:link:active, a:visited:active {
-        color: #14bf96;
-      }
-      #main-body {
-        margin: 10px;
-        padding: 10px;
-      }
-      #left-panel {
-        min-height: 50px;
-        overflow: hidden;
-      }
-      #right-panel {/* dimentions of the discord widget are 350 x 500 */
-        float: right;
-        width: 350;
-        min-height: 50px;
-        margin-left: 10px;
-      }
-      #img-debug {
-        width: 32px;
-        height: 32px;
-        float: left;
-      }
-      #debug-description {
-        margin-left: 40px;
-        margin-top: 30px;
-      }
-
+#left-panel {
+  min-height: 50px;
+  overflow: hidden;
+}
+#right-panel {/* dimentions of the discord widget are 350 x 500 */
+  float: right;
+  width: 350;
+  min-height: 50px;
+  margin-left: 10px;
+}
+#img-debug {
+  width: 32px;
+  height: 32px;
+  float: left;
+}
+#debug-description {
+  margin-left: 40px;
+  margin-top: 25px;
+}
+h2 > a {
+  text-decoration: none !important;
+}
     </style>
   </head>
   <body>
-    <h1>Khan Academy Community Center</h1>
+    <div class="topnav">
+      <span id="kaccHeader"><a href="index.html">Khan Academy Community Center</a></span>
+      <a href="partners.html">Partners</a>
+      <a href="serverstaff.html">Server Staff</a>
+      <a href="join.html">Join</a>
+      <a href="about.html">About</a>
+      <a class="active">Home</a>
+    </div>
+    <h1>Home</h1>
     <div id="main-body">
       <div id="right-panel">
         <iframe src="https://discordapp.com/widget?id=372895163279998976&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
       </div>
       <div id="left-panel">
-        <h2>About</h2>
+        <h2><a href="about.html">About</a></h2>
         <p>Khan Academy Community Center (KACC) is a welcoming discord community with over 200 members and active staff. This is the place where Khan Academy users can come to chat, get to know other users, talk about programming, and have fun!</p>
         <hr />
         <h2>Join</h2>
@@ -98,7 +57,8 @@
         <hr />
         <h2>Server Staff</h2>
         <p>Staff play an important role in maintaining our discord server and interacting with the community. </p>
-        <p>We are always looking for more server staff to contribute to our server. To apply for admin, moderator, daily dose poster, and other roles, click <a href="#">here</a>. To learn more, click <a href="#">here</a> </p>
+        <p>We are always looking for more server staff to contribute to our server. To apply for admin, moderator, daily dose poster, and other roles, click <a href="#">here</a>. To learn more, click <a href="#">here</a>.</p>
+        <p>You can also give us direct feedback by clicking <a href="https://goo.gl/forms/coLm1J0uLzRSlny83" target="_blank">this link</a>.</p>
         <hr />
         <h2>Partners</h2>
         <img id="img-debug" src="images/debugLogo.png" alt="Debug Center Logo">
